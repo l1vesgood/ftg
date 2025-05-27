@@ -44,11 +44,11 @@ class Video2Audio(loader.Module):
         "error": "🚫 <b>Ошибка при конвертировании</b>",
     }
 
-    async def client_ready(self):
-        self.v2a = await self.import_lib(
-            "https://raw.githubusercontent.com/hikariatama/ftg/refs/heads/master/v2a.py",
-            suspend_on_error=True,
-        )
+    # async def client_ready(self):
+    #     self.v2a = await self.import_lib(
+    #         "https://raw.githubusercontent.com/hikariatama/ftg/refs/heads/master/v2a.py",
+    #         suspend_on_error=True,
+    #     )
 
     @loader.command(
         ru_doc=(
